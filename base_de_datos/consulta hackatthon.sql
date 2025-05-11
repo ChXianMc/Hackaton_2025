@@ -1,0 +1,1 @@
+CREATE DATABASE Hackathon2025;
