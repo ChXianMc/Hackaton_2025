@@ -1,7 +1,9 @@
-from conexion_sql import mostrar_tabla
+from conexion_sql import mostrar_tabla,conectar_sql_server,usuario
+nombre = "fabian"
+email = "fabian8590@gmail.com"
 
-# Esta versión asume que mostrar_tabla() ya imprime la tabla
-registros = mostrar_tabla("Usuarios") 
+conexion = conectar_sql_server()
+registros = mostrar_tabla("Usuarios",conexion) 
+user = usuario("Usuarios",conexion,nombre,email)
 
-# Y adicionalmente muestra el conteo
 print(f"\nCantidad total de registros: {len(registros)}")

@@ -1,4 +1,5 @@
 import pyodbc
+from datetime import datetime
 from tabulate import tabulate  # Para formato de tabla más bonito (opcional)
 
 def conectar_sql_server():
@@ -28,17 +29,30 @@ def mostrar_tabla(nombre_tabla, conexion):
         registros = cursor.fetchall()
         
         # Obtener nombres de columnas
-        columnas = [column[0] for column in cursor.description]
+        #columnas = [column[0] for column in cursor.description]
         
         # Mostrar tabla con formato (usando tabulate)
-        print(f"\nContenido de la tabla '{nombre_tabla}':")
-        print(tabulate(registros, headers=columnas, tablefmt="grid"))
+       # print(f"\nContenido de la tabla '{nombre_tabla}':")
+        #print(tabulate(registros, headers=columnas, tablefmt="grid"))
         print(registros[0][1])
         return registros
         
     except Exception as e:
         print(f"Error al obtener datos: {e}")
         return []
+def usuario (nombre_tabla,conexion,nombre,email):
+    try:
+        cursor = conexion.cursor()
+        date = datetime.now()
+        cursor.execute(f"INSERT INTO {nombre_tabla}(nombre,email,fecha_registro) VALUES (?,?,?);",(nombre,email,date))
+        print("Exitooo")
+        cursor.commit()
+        return True
+        
+    except Exception as e:
+       print(f"Error al obtener datos: {e}")
+       return []
+
 
 
 if __name__ == "__main__":
@@ -62,3 +76,4 @@ if __name__ == "__main__":
             
             conexion.close()
             print("\nConexión cerrada")
+    
