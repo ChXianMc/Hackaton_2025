@@ -1,3 +1,12 @@
+USE Hackathon2025;
 CREATE DATABASE Hackathon2025;
 SELECT * FROM Usuarios;
 INSERT INTO Usuarios(nombre,email,fecha_registro) VALUES ('Roberto','robertopro2021@gmail.com',GETDATE());
+ALTER TABLE Usuarios ADD Contraseña VARCHAR(30) NOT NULL DEFAULT "Sin telefono";
+BEGIN TRANSACTION;
+ALTER TABLE Usuarios ADD Contraseña VARCHAR(15) NOT NULL DEFAULT 'Sin telefono';
+COMMIT;
+ALTER TABLE Usuarios ALTER COLUMN Contraseña VARCHAR(100);
+ALTER TABLE Usuarios ADD hora_registro DATETIME2 NOT NULL DEFAULT SYSDATETIME();
+ALTER TABLE Usuarios ALTER COLUMN Apellidos VARCHAR(50) NOT NULL;
+ALTER TABLE Usuarios ALTER COLUMN Apellidos VARCHAR(50) NULL ;

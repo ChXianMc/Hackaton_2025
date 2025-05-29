@@ -1,0 +1,112 @@
+[33mcommit 9c8319444d61ed25f223fc764338a130e96ae07e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 652832f 00ae3d6
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Wed May 28 16:54:19 2025 -0600
+
+    todo chido
+
+[33mcommit 652832f53da58d6aac17f508872600342075eff7[m
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Tue May 27 19:07:04 2025 -0600
+
+    Base de Datos
+
+[33mcommit 00ae3d69cff6581efc5ea4c9f9564de69112f8a5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Leefullstack <carlosreyestriana239@gmail.com>
+Date:   Mon May 19 19:27:33 2025 -0600
+
+    Add files via upload
+
+[33mcommit 68c2bc06f076383319a69c2c5220dcd70adc311f[m
+Author: Leefullstack <carlosreyestriana239@gmail.com>
+Date:   Mon May 19 19:24:44 2025 -0600
+
+    Create Login
+
+[33mcommit 4add84778a4076475753af0d72d97e1d4a2c159a[m
+Author: Xian <xianmarquez7@gmail.com>
+Date:   Sun May 18 16:31:50 2025 -0600
+
+    incorrecto
+
+[33mcommit ed573b09766ff19ef064d195d26a9927cbc69554[m
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Sun May 18 16:26:10 2025 -0600
+
+    Borré archivos incorrectos
+
+[33mcommit 440b19c81d3f5de1846eb2551883f5b789e3098a[m
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Sun May 18 16:13:27 2025 -0600
+
+    Borré archivos incorrectos
+
+[33mcommit 19fe528f728ff025fe570a6ae9826f903ef4f59c[m
+Merge: 5bc9fb5 d32d0c8
+Author: Leefullstack <carlosreyestriana239@gmail.com>
+Date:   Thu May 15 19:47:39 2025 -0600
+
+    Resolviendo conflicto de fusión
+
+[33mcommit 5bc9fb56f9ece288a8da0d8040ab73a0eca51e14[m
+Author: Leefullstack <carlosreyestriana239@gmail.com>
+Date:   Thu May 15 19:42:08 2025 -0600
+
+    Actualizando proyecto: cambios y eliminaciones
+
+[33mcommit 9caa6c1678945d1537b5b6c74cca381400ecd186[m
+Author: Leefullstack <carlosreyestriana239@gmail.com>
+Date:   Thu May 15 19:39:15 2025 -0600
+
+    Subiendo mi proyecto
+
+[33mcommit d32d0c8d3dbeecf5b9a92c407d4ff39cb1e0bda4[m
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Sun May 11 14:51:53 2025 -0600
+
+    primer avance bdb
+
+[33mcommit 506625c2664ea59ace8e67ba233fc64cc459d897[m
+Author: leontr239 <39765342-leontr239@users.noreply.replit.com>
+Date:   Sun May 11 06:39:32 2025 +0000
+
+    Rename application to "NoName System" throughout the user interface
+    
+    Rename "Healthcare System" to "NoName System" in base.html, forgot_password.html, login.html, and reset_password.html templates.
+    
+    Replit-Commit-Author: Agent
+    Replit-Commit-Session-Id: 8f0a4c41-0923-4766-bde1-f4bd183b2888
+    Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/c3aa28ac-e5bc-4b7a-a49a-6a93aa967a67/d78d6eff-34a5-4c28-9f9a-d59eecf66063.jpg
+
+[33mcommit cf1439f89e50d2f1819d1563e9ce5ca93e6d8391[m
+Author: leontr239 <39765342-leontr239@users.noreply.replit.com>
+Date:   Sun May 11 06:36:04 2025 +0000
+
+    Create a secure login system for medical staff and patients
+    
+    Implements Flask-Login, SQLAlchemy, WTForms, and a healthcare-themed UI with CSS and JS.
+    
+    Replit-Commit-Author: Agent
+    Replit-Commit-Session-Id: 8f0a4c41-0923-4766-bde1-f4bd183b2888
+    Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/c3aa28ac-e5bc-4b7a-a49a-6a93aa967a67/ca8c8175-e612-4bc3-b465-334829ac87a6.jpg
+
+[33mcommit 7342d83a44f9284b1a5c1fbe9569c5a7c115a018[m
+Author: leontr239 <39765342-leontr239@users.noreply.replit.com>
+Date:   Sun May 11 06:29:56 2025 +0000
+
+    Started building your app
+    
+    Replit-Commit-Author: Agent
+    Replit-Commit-Session-Id: 8f0a4c41-0923-4766-bde1-f4bd183b2888
+
+[33mcommit 783ef9b9e49388cf95ac917dd46229faac5965c5[m
+Author: leontr239 <39765342-leontr239@users.noreply.replit.com>
+Date:   Sun May 11 06:29:56 2025 +0000
+
+    Initial commit
+
+[33mcommit ab9dff9c2b360ca6ac802093c8a3695902679aee[m
+Author: ChXianMc <xianmarquez7@gmail.com>
+Date:   Tue May 6 19:54:50 2025 -0600
+
+    ready

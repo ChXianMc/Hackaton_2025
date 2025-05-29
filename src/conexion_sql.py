@@ -1,7 +1,7 @@
 import pyodbc
 from datetime import datetime
 from tabulate import tabulate  # Para formato de tabla más bonito (opcional)
-
+from security import validar_contraseña,crear_hash_seguro,verificar_contraseña
 def conectar_sql_server():
     
     connection_string = (
@@ -40,11 +40,13 @@ def mostrar_tabla(nombre_tabla, conexion):
     except Exception as e:
         print(f"Error al obtener datos: {e}")
         return []
-def usuario (nombre_tabla,conexion,nombre,email):
+def register (nombre_tabla,conexion,nombre,email,contraseña):
     try:
         cursor = conexion.cursor()
         date = datetime.now()
-        cursor.execute(f"INSERT INTO {nombre_tabla}(nombre,email,fecha_registro) VALUES (?,?,?);",(nombre,email,date))
+        contra = validar_contraseña(contraseña)
+        contra = crear_hash_seguro(contraseña)
+        cursor.execute(f"INSERT INTO {nombre_tabla}(nombre,email,contraseña,fecha_registro) VALUES (?,?,?,?);",(nombre,email,contra,date))
         print("Exitooo")
         cursor.commit()
         return True
@@ -54,6 +56,21 @@ def usuario (nombre_tabla,conexion,nombre,email):
        return []
 
 
+def inicio(email,contraseña_user,conexion):
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(f"SELECT Contraseña FROM Usuarios WHERE email = ?;",(email))
+        contrag = cursor
+        contraseña = crear_hash_seguro(contraseña_user)
+        print({contrag})
+        entrada = verificar_contraseña(contrag,contraseña)
+        if True == entrada:
+            print("todo exquisito mi rey")
+        else:
+            print("error mi rey")
+    except Exception as e:
+        print(f"Error al obtener datos: {e}")
+        return []
 
 if __name__ == "__main__":
     
